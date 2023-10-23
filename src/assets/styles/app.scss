@@ -1,0 +1,83 @@
+.page {
+    @apply flex flex-col overflow-hidden h-full;
+
+    .action {
+        @apply flex space-x-24 p-8;
+
+        .ant-btn {
+            @apply flex-1;
+        }
+    }
+
+    .draw-container {
+        @apply flex-1 flex;
+        overflow: scroll;
+        overflow: overlay;
+
+        .draw-map {
+            @apply w-fit h-fit m-auto;
+
+            border: 0 solid #ccc;
+            border-bottom-width: 1px;
+            border-right-width: 1px;
+
+            .row {
+                @apply flex w-fit;
+
+                .cell {
+                    @apply w-24 h-24;
+                    border: 0 solid #ccc;
+                    border-top-width: 1px;
+                    border-left-width: 1px;
+
+                    &.selected {
+                        background-color: #00a9ff;
+                    }
+
+                    &.piece-1 {
+                        background-color: #ff8080;
+                    }
+                    &.piece-2 {
+                        background-color: #00a9ff;
+                    }
+                    &.piece-3 {
+                        background-color: #cbffa9;
+                    }
+                    &.piece-4 {
+                        background-color: #fffec4;
+                    }
+                    &.piece-5 {
+                        background-color: #a0c49d;
+                    }
+                    &.piece-6 {
+                        background-color: #f1c27b;
+                    }
+                    &.piece-7 {
+                        background-color: #f2d8d8;
+                    }
+                    &.piece-8 {
+                        background-color: #c4dfdf;
+                    }
+                    &.piece-9 {
+                        background-color: #537188;
+                    }
+                    &.piece-10 {
+                        background-color: #cbb279;
+                    }
+                    &.piece-11 {
+                        background-color: #b2a4ff;
+                    }
+                    &.piece-12 {
+                        background-color: #ffaacf;
+                    }
+                    &.piece-13 {
+                        background-color: #e5fdd1;
+                    }
+                    &.piece-14 {
+                        background-color: #8ea7e9;
+                    }
+                }
+            }
+        }
+    }
+}
