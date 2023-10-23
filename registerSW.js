@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/block-puzzle-and-conquer-solver/sw.js', { scope: '/block-puzzle-and-conquer-solver/' })})}
